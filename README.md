@@ -70,13 +70,4 @@ Feel free to open issues or pull requests. Suggested contribution steps:
 3. Add tests or manual verification instructions if you change parser behavior
 4. Open a pull request describing your changes and testing steps
 
----
-
-## License
-
-This project is intended to be MIT-licensed. Add a `LICENSE` file if you want to publish under MIT or another license.
-
----
-
-If you want, I can add a placeholder `build/icon.ico` to the repository so `npm run dist` won't fail due to icon conversion — say "add ico" and I'll add it and update `package.json`.
 
