@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b6fb0"/>
+      <stop offset="1" stop-color="#1f5a91"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer rounded tile with light gray background instead of white to avoid blending with PNG background -->
+  <rect x="8" y="8" width="240" height="240" rx="28" ry="28" fill="#e0e0e0"/>
+
+  <!-- calculator body -->
+  <rect x="24" y="24" width="208" height="210" rx="20" ry="20" fill="url(#bg)"/>
+
+  <!-- screen -->
+  <rect x="42" y="42" width="172" height="36" rx="6" ry="6" fill="#ffffff" opacity="0.95"/>
+  <text x="210" y="72" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end">0</text>
+
+  <!-- buttons grid -->
+  <g transform="translate(42,94)">
+    <g fill="#f6f7f9" stroke="#bfc7d0" stroke-width="2">
+      <rect x="0" y="0" width="36" height="28" rx="4" ry="4"/>
+      <rect x="44" y="0" width="36" height="28" rx="4" ry="4"/>
+      <rect x="88" y="0" width="36" height="28" rx="4" ry="4"/>
+      <rect x="132" y="0" width="40" height="28" rx="4" ry="4"/>
+
+      <rect x="0" y="36" width="36" height="28" rx="4" ry="4"/>
+      <rect x="44" y="36" width="36" height="28" rx="4" ry="4"/>
+      <rect x="88" y="36" width="36" height="28" rx="4" ry="4"/>
+      <rect x="132" y="36" width="40" height="28" rx="4" ry="4"/>
+
+      <rect x="0" y="72" width="36" height="28" rx="4" ry="4"/>
+      <rect x="44" y="72" width="36" height="28" rx="4" ry="4"/>
+      <rect x="88" y="72" width="36" height="28" rx="4" ry="4"/>
+
+      <rect x="0" y="108" width="80" height="16" rx="4" ry="4"/>
+      <rect x="88" y="108" width="36" height="16" rx="4" ry="4"/>
+      <rect x="133" y="108" width="38" height="16" rx="4" ry="4"/>
+    </g>
+
+    <!-- highlight enter button -->
+    <rect x="132" y="72" width="40" height="52" rx="6" ry="6" fill="#34c759" stroke="#2aa24f" stroke-width="2"/>
+  </g>
+
+  <!-- optional top-left badge -->
+  <circle cx="52" cy="52" r="8" fill="#ffffff" opacity="0.12"/>
+</svg>

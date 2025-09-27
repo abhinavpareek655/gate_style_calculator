@@ -1,0 +1,28 @@
+{
+  "name": "gate-style-calculator",
+  "version": "1.0.0",
+  "description": "Scientific Calculator Windows App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-win": "electron-packager . ScientificCalc --platform=win32 --arch=x64 --overwrite",
+    "dist": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "electron-builder": "^24.6.0",
+    "electron-packager": "^17.1.0"
+  },
+  "build": {
+    "appId": "com.example.scientificcalc",
+    "productName": "ScientificCalc",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    }
+  }
+}
